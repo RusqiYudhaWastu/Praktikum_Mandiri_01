@@ -1,222 +1,168 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata Kelompok 15</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #ffffff 0%, #c2e9fb 100%); 
-            margin: 0;
-            padding: 20px;
-            color: #333;
-            min-height: 100vh; 
-            display: flex;
-            align-items: center;
-        }
-
-        .main-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px; 
-            margin: 0 auto; 
-            gap: 40px; 
-        }
-
-        .header-section {
-            flex: 1; 
-            text-align: left;
-        }
-
-        .header-section h1 {
-            font-size: 45px;
-            font-weight: 800;
-            color: #2c3e50;
-            margin: 0;
-            line-height: 1.2;
-        }
-
-        .header-section p {
-            font-size: 16px;
-            color: #555;
-            margin-top: 15px;
-            font-weight: 400;
-        }
-
-        /* --- PERUBAHAN UNTUK 5 DATA (FORMASI 2-2-1) --- */
-        .container {
-            flex: 2.2; 
-            display: flex;
-            flex-wrap: wrap; /* Izinkan kotak turun ke bawah kalau baris penuh */
-            justify-content: center; /* Paksa kotak yang turun (ganjil) ke tengah */
-            gap: 15px; 
-        }
-
-        .card {
-            width: calc(45% - 20px); /* Paksa ukuran kotak selalu setengah area (dikurang gap) */
-            box-sizing: border-box;
-            display: flex; 
-            align-items: center; 
-            background-color: white;
-            padding: 15px 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-       
-/* Warna */
-        .garis-merah { border-left: 6px solid #ff7675; }
-        .garis-kuning { border-left: 6px solid #ff7675; }
-        .garis-hijau { border-left: 6px solid #000000; }
-        .garis-ungu { border-left: 6px solid #000000; }
-        .garis-biru { border-left: 6px solid #ff7675; } 
-
-        .card img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #f1f2f6;
-            margin-right: 15px; 
-            flex-shrink: 0; 
-        }
-
-        .info {
-            text-align: left;
-            width: 100%;
-        }
-
-        .info h3 {
-            margin: 0 0 10px 0;
-            color: #2d3436;
-            font-size: 17px;
-            font-weight: 600;
-        }
-
-        .info-data {
-            display: flex;
-            flex-wrap: wrap; 
-            gap: 8px; 
-        }
-
-        .info-data p {
-            margin: 0;
-            font-size: 11px; 
-            color: #444;
-            background-color: #f8f9fa;
-            padding: 5px 10px;
-            border-radius: 20px; 
-            border: 1px solid #e9ecef;
-            white-space: nowrap; /* Mencegah teks patah ke bawah */
-        }
-
-        /* Responsive untuk HP / Layar Kecil */
-        @media (max-width: 1024px) {
-            .main-wrapper {
-                flex-direction: column; 
-                text-align: center;
-                gap: 30px;
-            }
-            .header-section {
-                text-align: center;
-            }
-            .card {
-                width: 100%; /* Di layar HP, semua kotak jadi 1 baris memanjang ke bawah */
-            }
-        }
-    </style>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
 
-    <div class="main-wrapper">
+    <!-- Bagian Header -->
+    <center>
+        <h1 style="margin-bottom: 5px;">Biodata Kelompok 15</h1>
+        <h3 style="margin-top: 0; font-weight: normal;">Mata Kuliah Desain UI/UX<br>STT Terpadu Nurul Fikri</h3>
+        <hr width="70%">
+    </center>
+    <br>
+
+    <!-- Tabel Layout Utama 2-2-1 -->
+    <table border="1" width="70%" align="center" cellpadding="20" cellspacing="0" style="border-collapse: collapse;">
         
-        <div class="header-section">
-            <h1> Biodata<br>Kelompok 15</h1>
-            <p>Mata Kuliah Desain UI/UX<br>STT Terpadu Nurul Fikri</p>
-        </div>
-
-        <div class="container">
-            
+        <!-- Baris 1: 2 Orang -->
+        <tr>
             <!-- Anggota 1 -->
-            <div class="card garis-merah">
-                <img src="assets/img/aing.jpeg" alt="Foto Profil">
-                <div class="info">
-                    <h3>Rusqi Yudha Wastu</h3>
-                    <div class="info-data">
-                        <p><strong>🆔 NIM:</strong> 0110226008</p>
-                        <p><strong>🎓 Jurusan:</strong> Teknik Informatika</p>
-                        <p><strong>🏃‍♂️ Hobi:</strong> Ngoding</p>
-                        <p><strong>📍 Asal:</strong> Bogor</p>
-                    </div>
-                </div>
-            </div>
+            <td width="50%" align="center" valign="top">
+                <h3 style="margin-top: 0;">Rusqi Yudha Wastu</h3>
+                <img src="assets/img/aing.jpeg" alt="Rusqi Yudha Wastu" width="100" height="100" style="border-radius: 50%; object-fit: cover;">
+                <br><br>
+                <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left;">
+                    <tr>
+                        <td width="35%"><b>NIM</b></td>
+                        <td>0110226008</td>
+                    </tr>
+                    <tr>
+                        <td><b>Jurusan</b></td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td><b>Hobi</b></td>
+                        <td>Ngoding</td>
+                    </tr>
+                    <tr>
+                        <td><b>Asal</b></td>
+                        <td>Bogor</td>
+                    </tr>
+                </table>
+            </td>
 
             <!-- Anggota 2 -->
-            <div class="card garis-kuning">
-                <img src="assets/img/riki.jpeg" alt="Foto Profil">
-                <div class="info">
-                    <h3>Rhiky Setiawan </h3>
-                    <div class="info-data">
-                        <p><strong>🆔 NIM:</strong> 0110226146</p>
-                        <p><strong>🎓 Jurusan:</strong> Teknik Informatika</p>
-                        <p><strong>🏃‍♂️ Hobi:</strong> Menggambar</p>
-                        <p><strong>📍 Asal:</strong> Depok</p>
-                    </div>
-                </div>
-            </div>
+            <td width="50%" align="center" valign="top">
+                <h3 style="margin-top: 0;">Rhiky Setiawan</h3>
+                <img src="assets/img/riki.jpeg" alt="Rhiky Setiawan" width="100" height="100" style="border-radius: 50%; object-fit: cover;">
+                <br><br>
+                <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left;">
+                    <tr>
+                        <td width="35%"><b>NIM</b></td>
+                        <td>0110226146</td>
+                    </tr>
+                    <tr>
+                        <td><b>Jurusan</b></td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td><b>Hobi</b></td>
+                        <td>Menggambar</td>
+                    </tr>
+                    <tr>
+                        <td><b>Asal</b></td>
+                        <td>Depok</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 
+        <!-- Baris 2: 2 Orang -->
+        <tr>
             <!-- Anggota 3 -->
-            <div class="card garis-hijau">
-                <img src="assets/img/bas.jpeg" alt="Foto Profil">
-                <div class="info">
-                    <h3>Sebastian Abdilah</h3>
-                    <div class="info-data">
-                        <p><strong>🆔 NIM:</strong>  0110226013</p>
-                        <p><strong>🎓 Jurusan:</strong> Teknik Informatika</p>
-                        <p><strong>🏃‍♂️ Hobi:</strong> Main Game</p>
-                        <p><strong>📍 Asal:</strong> Depok</p>
-                    </div>
-                </div>
-            </div>
+            <td width="50%" align="center" valign="top">
+                <h3 style="margin-top: 0;">Sebastian Abdilah</h3>
+                <img src="assets/img/bas.jpeg" alt="Sebastian Abdilah" width="100" height="100" style="border-radius: 50%; object-fit: cover;">
+                <br><br>
+                <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left;">
+                    <tr>
+                        <td width="35%"><b>NIM</b></td>
+                        <td>0110226013</td>
+                    </tr>
+                    <tr>
+                        <td><b>Jurusan</b></td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td><b>Hobi</b></td>
+                        <td>Main Game</td>
+                    </tr>
+                    <tr>
+                        <td><b>Asal</b></td>
+                        <td>Depok</td>
+                    </tr>
+                </table>
+            </td>
 
             <!-- Anggota 4 -->
-            <div class="card garis-ungu">
-                <img src="assets/img/rk.jpg" alt="Foto Profil">
-                <div class="info">
-                    <h3>Rizkia Auladina</h3>
-                    <div class="info-data">
-                        <p><strong>🆔 NIM:</strong>  0110226076 </p>
-                        <p><strong>🎓 Jurusan:</strong> Teknik Informatika</p>
-                        <p><strong>🏃‍♂️ Hobi:</strong> Ngoding</p>
-                        <p><strong>📍 Asal:</strong> Depok</p>
-                    </div>
-                </div>
-            </div>
+            <td width="50%" align="center" valign="top">
+                <h3 style="margin-top: 0;">Rizkia Auladina</h3>
+                <img src="assets/img/rk.jpg" alt="Rizkia Auladina" width="100" height="100" style="border-radius: 50%; object-fit: cover;">
+                <br><br>
+                <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left;">
+                    <tr>
+                        <td width="35%"><b>NIM</b></td>
+                        <td>0110226171</td>
+                    </tr>
+                    <tr>
+                        <td><b>Jurusan</b></td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td><b>Hobi</b></td>
+                        <td>Ngoding</td>
+                    </tr>
+                    <tr>
+                        <td><b>Asal</b></td>
+                        <td>Depok</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 
-            <!-- Anggota 5 (Otomatis ke tengah di baris paling bawah) -->
-            <div class="card garis-biru">
-                <img src="assets/img/aji.jpeg" alt="Foto Profil">
-                <div class="info">
-                    <h3>Seftian Ajie Saputra</h3>
-                    <div class="info-data">
-                        <p><strong>🆔 NIM:</strong> 0110226091</p>
-                        <p><strong>🎓 Jurusan:</strong> Teknik Informatika</p>
-                        <p><strong>🏃‍♂️ Hobi:</strong> Desain</p>
-                        <p><strong>📍 Asal:</strong> Bojong Gede</p>
-                    </div>
-                </div>
-            </div>
-            
+        <!-- Baris 3: 1 Orang (Posisi di Tengah) -->
+        <tr>
+            <!-- Anggota 5 -->
+            <td colspan="2" align="center" valign="top">
+                
+                <!-- Dibungkus tabel bayangan agar lebarnya sama persis dengan tabel di atas (50%) -->
+                <table border="0" width="50%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center">
+                            <h3 style="margin-top: 0;">Seftian Ajie Saputra</h3>
+                            <img src="assets/img/aji.jpeg" alt="Seftian Ajie Saputra" width="100" height="100" style="border-radius: 50%; object-fit: cover;">
+                            <br><br>
+                            <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left;">
+                                <tr>
+                                    <td width="35%"><b>NIM</b></td>
+                                    <td>0110226091</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Jurusan</b></td>
+                                    <td>Teknik Informatika</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Hobi</b></td>
+                                    <td>Desain</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Asal</b></td>
+                                    <td>Bojong Gede</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
 
-        </div>
+            </td>
+        </tr>
 
-    </div>
+    </table>
+    <br><br>
 
 </body>
 </html>
